@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/logo.svg" />
+    <title>Leg1t</title>
+    <script type="module" src="assets/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <img class="top" src="borders.svg" alt="borders" />
+    <img class="bot" src="borders.svg" alt=" borders" />
+    <div class="container4">
+      <img class="scale1" src="logo.svg" alt="" />
+    </div>
+    <div>
+      <div class="text1">
+        Who are <span class="boldu">you</span
+        ><span class="boldq" style="color: #4bea83">?</span>
+      </div>
+
+      <div id="step-1" style="display: block">
+        <div class="center"><span style="color: #4bea83">1 </span>/ 3</div>
+        <div class="center">
+          <div class="image-container">
+            <img src="metamask.svg" alt="metamask" class="image left-image" />
+            <img src="metamask.svg" alt="metamask" class="image center-image" />
+            <img src="metamask.svg" alt="metamask" class="image right-image" />
+          </div>
+
+          <p class="mobile">
+            how many
+            <span>Metamask</span>
+            accounts do you have <span style="color: #4bea83">?</span>
+          </p>
+        </div>
+        <div class="center">
+          <div id="numberMeta" class="border-wrap">
+            <input class="input" type="number" placeholder="Enter a number" />
+          </div>
+        </div>
+      </div>
+
+      <div id="step-2" style="display: none">
+        <div class="center">
+          <div><span style="color: #4bea83">2 </span>/ 3</div>
+          <div class="image-container">
+            <img src="twitter-x.svg" alt="twitter-x" class="image left-image" />
+            <img
+              src="twitter-x.svg"
+              alt="twitter-x"
+              class="image center-image"
+            />
+            <img
+              src="twitter-x.svg"
+              alt="twitter-x"
+              class="image right-image"
+            />
+          </div>
+          <p class="mobile">
+            how many
+            <span>Twitter(X)</span>
+            accounts do you have <span style="color: #4bea83">?</span>
+          </p>
+        </div>
+        <div class="center">
+          <div id="numberTwitter" class="border-wrap">
+            <input class="input" type="number" placeholder="Enter a number" />
+          </div>
+        </div>
+      </div>
+
+      <div id="step-3" style="display: none">
+        <div class="center">
+          <div><span style="color: #4bea83">3 </span>/ 3</div>
+          <div class="image-container">
+            <img src="telegram.svg" alt="telegram" class="image left-image" />
+            <img src="telegram.svg" alt="telegram" class="image center-image" />
+            <img src="telegram.svg" alt="telegram" class="image right-image" />
+          </div>
+          <p class="mobile">
+            how many
+            <span>Telegram</span>
+            accounts do you have <span style="color: #4bea83">?</span>
+          </p>
+          <div class="center">
+            <div id="numberTelegram" class="border-wrap">
+              <input class="input" type="number" placeholder="Enter a number" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+        <div>
+          <div class="butonback" style="display: none">
+            <button class="back" type="button">Back</button>
+          </div>
+          <div class="butonnext">
+            <button class="next" type="button">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat">
+        <div class="stat_deger">2</div>
+        <div class="stat-title">Metamask Accounts</div>
+      </div>
+      <div class="stat">
+        <div class="stat_deger">2</div>
+        <div class="stat-title">Twitter Accounts</div>
+      </div>
+      <div class="stat">
+        <div class="stat_deger">2</div>
+        <div class="stat-title">Telegram Accounts</div>
+      </div>
+      <div class="stat">
+        <div class="stat_deger">2</div>
+        <div class="stat-title">Unique Users</div>
+      </div>
+    </div>
+
+    <div>
+      <div id="step-4" class="center" style="display: none">
+        <div class="container4">
+          <img class="scale1" src="logo.svg" alt="" />
+        </div>
+        <div class="stats-container2">
+          <div class="stat2">
+            <div class="stat-title2">5</div>
+            <div class="stat-subtitle2">Metamask Accounts</div>
+          </div>
+          <div class="stat2">
+            <div class="stat-title2">5</div>
+            <div class="stat-subtitle2">Twitter Accounts</div>
+          </div>
+          <div class="stat2">
+            <div class="stat-title2">5</div>
+            <div class="stat-subtitle2">Telegram Accounts</div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <div class="text-wrapper2">
+            <div class="but">BUT STILL</div>
+            <div class="unique">UNIQUE</div>
+          </div>
+          <p class="join-text2">Join the Waitlist. Earn points for Airdrop.</p>
+        </div>
+
+        <div class="border-wrap">
+          <input
+            class="input email"
+            type="email"
+            placeholder="Enter an email"
+          />
+        </div>
+        <div>
+          <div class="butonjoin">
+            <button class="join" type="button">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="step-5" style="display: block">
+        <div class="top2 tt">legitimizing web3</div>
+        <div class="container3">
+          <img class="scale2" src="big-legit.svg" alt="" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <div>
+                <div class="stats-container3">
+                  <div class="stat3">
+                    <div class="stat-title3">5</div>
+                    <div class="stat-subtitle3">Metamask Accounts</div>
+                  </div>
+                  <div class="stat3">
+                    <div class="stat-title3">5</div>
+                    <div class="stat-subtitle3">Twitter Accounts</div>
+                  </div>
+                  <div class="stat3">
+                    <div class="stat-title3">5</div>
+                    <div class="stat-subtitle3">Telegram Accounts</div>
+                  </div>
+                </div>
+                <div class="text-wrapper3">
+                  <div class="but">
+                    BUT STILL <span class="deger_uniq">2</span>
+                  </div>
+                  <div class="unique">UNIQUE USERS</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="big_logo" src="big-legit.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

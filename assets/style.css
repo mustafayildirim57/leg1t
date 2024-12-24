@@ -10,27 +10,27 @@ body::after {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 6.25rem; /* Işığın yüksekliği */
+  height: 6.25rem;
   background: linear-gradient(
     to bottom,
     rgba(0, 255, 0, 0.1),
     rgba(0, 255, 0, 0) 70%
   );
   z-index: 2;
-  pointer-events: none; /* Etkileşimi devre dışı bırakır */
+  pointer-events: none;
 }
 
 body::before {
-  top: 0; /* Üst tarafta */
+  top: 0;
 }
 
 body::after {
-  bottom: 0; /* Alt tarafta */
+  bottom: 0;
   background: linear-gradient(
     to top,
     rgba(0, 255, 0, 0.1),
     rgba(0, 255, 0, 0) 70%
-  ); /* Alttan yukarı doğru ışık */
+  );
 }
 
 .top {
@@ -68,11 +68,11 @@ body::after {
 }
 
 .image-container {
-  display: flex; /* Flexbox kullanımı */
-  justify-content: center; /* Yatayda ortalama */
-  align-items: center; /* Dikeyde ortalama */
-  position: relative; /* Konumlandırma için gerekli */
-  height: 5rem; /* Kapsayıcı yüksekliği */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 5rem;
   margin-left: 48.5%;
 }
 
@@ -81,22 +81,22 @@ body::after {
 }
 
 .left-image {
-  left: -2rem; /* Sol görselin pozisyonu */
-  z-index: 1; /* Arkada */
-  transform: scale(0.9); /* Küçük görünmesi için */
+  left: -2rem;
+  z-index: 1;
+  transform: scale(0.9);
   opacity: 80%;
 }
 
 .center-image {
-  left: 0; /* Ortadaki görsel */
-  z-index: 2; /* Önde */
-  transform: scale(1.1); /* Büyük görünmesi için */
+  left: 0;
+  z-index: 2;
+  transform: scale(1.1);
 }
 
 .right-image {
-  left: 2rem; /* Sağ görselin pozisyonu */
-  z-index: 1; /* Arkada */
-  transform: scale(0.9); /* Küçük görünmesi için */
+  left: 2rem;
+  z-index: 1;
+  transform: scale(0.9);
   opacity: 80%;
 }
 
@@ -145,7 +145,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -156,9 +155,7 @@ input[type="number"] {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.125rem;
-  /* Kenarlık genişliği */
   border-radius: 1.5rem;
-  /* Oval kenarlık */
   background: linear-gradient(0deg, white 0%, black 74.5%);
 }
 
@@ -168,9 +165,7 @@ input[type="number"] {
   display: inline-block;
   margin-top: 4.75rem;
   padding: 0.125rem;
-  /* Kenarlık genişliği */
   border-radius: 0.75rem;
-  /* Oval kenarlık */
   background: linear-gradient(90deg, white 0%, black 74.5%);
 }
 
@@ -180,9 +175,7 @@ input[type="number"] {
   display: inline-block;
   margin-top: 4.75rem;
   padding: 0.125rem;
-  /* Kenarlık genişliği */
   border-radius: 0.75rem;
-  /* Oval kenarlık */
   background: linear-gradient(270deg, white 0%, black 74.5%);
 }
 
@@ -231,24 +224,18 @@ button.next:disabled {
   text-decoration-skip-ink: none;
   text-align: center;
   padding: 0 3.125rem;
-  /* İçerikler arası boşluk */
   position: relative;
 }
 
 .stat:not(:last-child)::after {
   content: "";
-  /* Çizgiyi eklemek için boş içerik */
   position: absolute;
   top: 50%;
-  /* Ortalar */
   right: 0;
   transform: translateY(-50%);
   height: 120%;
-  /* Çizgi uzunluğu */
   width: 0.125rem;
-  /* Çizgi kalınlığı */
   background-color: rgba(255, 255, 255, 0.3);
-  /* Hafif opak beyaz çizgi */
 }
 
 .stat-title {
@@ -261,7 +248,6 @@ button.next:disabled {
   line-height: 0.75rem;
   margin-top: 0.25rem;
   color: rgba(255, 255, 255, 0.7);
-  /* Hafif opak yazı */
 }
 
 .scale2 {
@@ -287,7 +273,6 @@ button.next:disabled {
   text-decoration-skip-ink: none;
   text-align: center;
   padding: 0 1.25rem;
-  /* İçerikler arası boşluk */
   position: relative;
 }
 
@@ -329,7 +314,6 @@ button.next:disabled {
   height: 50%;
   overflow: hidden;
   flex-grow: 1;
-  /* İçeriği yayılmasını sağlar */
 }
 
 .text-wrapper2 {
@@ -339,7 +323,6 @@ button.next:disabled {
   justify-content: center;
   text-align: center;
   margin-bottom: 1.25rem;
-  /* Join yazısına yer açmak için boşluk */
 }
 
 .text-wrapper2 .but {
@@ -347,9 +330,7 @@ button.next:disabled {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1;
-  /* Satır yüksekliğini sıfırlar */
   vertical-align: bottom;
-  /* Aşağıya hizalar */
   color: white;
 }
 
@@ -358,16 +339,13 @@ button.next:disabled {
   font-family: "Outfit", serif;
   font-weight: bold;
   line-height: 1;
-  /* Satır yüksekliğini sıfırlar */
   color: #4bea83;
-  /* Renk vurgusu */
 }
 
 .join-text2 {
   margin-top: 3.125rem;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.7);
-  /* Hafif opak beyaz */
   text-align: center;
 }
 
@@ -381,9 +359,7 @@ button.next:disabled {
   display: inline-block;
   margin-top: 3.125rem;
   padding: 0.125rem;
-  /* Kenarlık genişliği */
   border-radius: 0.75rem;
-  /* Oval kenarlık */
   background: linear-gradient(270deg, white 0%, black 74.5%);
 }
 
@@ -402,15 +378,12 @@ button.next:disabled {
   position: fixed;
   width: 100%;
   height: 100vh;
-  /* Ekranın tamamını kapsar */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Opak siyah arka plan */
   z-index: 999;
   overflow: auto;
-  /* İçeriğin taşması durumunda kaydırma çubuğu ekler */
 }
 
 ::-webkit-scrollbar {
@@ -440,7 +413,6 @@ button.next:disabled {
   text-decoration-skip-ink: none;
   text-align: center;
   padding: 0 1.25rem;
-  /* İçerikler arası boşluk */
   position: relative;
 }
 
@@ -477,7 +449,6 @@ button.next:disabled {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.375rem;
-  /* Satır yüksekliğini sıfırlar */
   color: white;
 }
 
@@ -486,19 +457,14 @@ button.next:disabled {
   font-size: 5rem;
   font-weight: bold;
   line-height: 5rem;
-  /* Satır yüksekliğini sıfırlar */
   color: #4bea83;
-  /* Renk vurgusu */
 }
 
 .row {
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* Yatayda ortalar */
   align-items: center;
-  /* Dikeyde ortalar */
-  /* Kapsayıcının yüksekliği */
 }
 
 .top2 {
@@ -528,7 +494,6 @@ button.next:disabled {
   overflow: hidden;
 }
 
-/* Media queries for mobile devices */
 @media (max-width: 768px) {
   * {
     box-sizing: border-box;
@@ -586,7 +551,7 @@ button.next:disabled {
   .stats-container {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* İki sütun */
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     text-align: center;
   }
@@ -601,7 +566,7 @@ button.next:disabled {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    position: relative; /* Çizgiler için gerekli */
+    position: relative;
   }
 
   .stat::after {
@@ -609,16 +574,16 @@ button.next:disabled {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 0.125rem; /* Çizgi kalınlığı */
+    width: 0.125rem;
     background-color: rgba(255, 255, 255, 0.3);
-    display: none; /* Varsayılan olarak gizle */
+    display: none;
   }
 
   .stat:nth-child(1)::after,
   .stat:nth-child(3)::after {
     height: 100%;
-    display: block; /* Yalnızca iki çizgi göster */
-    right: -0.5rem; /* Sağ kenarda görünür */
+    display: block;
+    right: -0.5rem;
   }
 
   .stat-title {
@@ -626,21 +591,21 @@ button.next:disabled {
   }
 
   .stats-container2 {
-    flex-direction: row; /* Yan yana hizalama */
-    gap: 0rem; /* Küçük boşluk */
+    flex-direction: row;
+    gap: 0rem;
   }
 
   .stat2 {
-    font-size: 1.5rem; /* Küçük yazı boyutu */
+    font-size: 1.5rem;
   }
 
   .stat-title2 {
-    font-size: 3rem; /* Başlık yazı boyutunu küçült */
+    font-size: 3rem;
     line-height: 3rem;
   }
 
   .stat-subtitle2 {
-    font-size: 1rem; /* Alt başlık yazı boyutunu küçült */
+    font-size: 1rem;
     line-height: 0.8rem;
   }
 
@@ -657,7 +622,7 @@ button.next:disabled {
     height: 40%;
     padding: 1rem;
     background-size: cover;
-    background-image: none; /* Mobilde arka planı kaldır */
+    background-image: none;
   }
 
   .email {
@@ -695,23 +660,23 @@ button.next:disabled {
     height: 50vh;
   }
   .stats-container3 {
-    flex-direction: row; /* Yan yana hizalama */
+    flex-direction: row;
     align-items: center;
   }
 
   .stat3 {
-    font-size: 1.5rem; /* Küçük yazı boyutu */
-    padding: 0.5rem; /* Küçük iç boşluk */
-    flex: 1 1 calc(33.33% - 1rem); /* Üçte bir genişlik */
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    flex: 1 1 calc(33.33% - 1rem);
   }
 
   .stat-title3 {
-    font-size: 3rem; /* Başlık yazı boyutunu küçült */
+    font-size: 3rem;
     line-height: 3rem;
   }
 
   .stat-subtitle3 {
-    font-size: 1rem; /* Alt başlık yazı boyutunu küçült */
+    font-size: 1rem;
     line-height: 0.8rem;
   }
 }
